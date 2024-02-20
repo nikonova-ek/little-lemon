@@ -1,0 +1,92 @@
+.hero-bg {
+  background-color: #495e57;
+  margin-top: -1.4rem;
+}
+main {
+  grid-column: 3 / 11;
+  grid-row: 2;
+}
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 40px;
+}
+main h1 {
+  color: #f4ce14;
+  margin-left: 40px;
+  font-size: 3rem;
+  margin-top: 0rem;
+  margin-bottom: -2rem;
+}
+main h2 {
+  color: white;
+  margin-left: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+main p {
+  color: white;
+  padding-bottom: rem;
+  margin-left: 40px;
+  margin-top: -20px;
+}
+.hero-left {
+  padding: 2.5rem 0 2.5rem 0;
+}
+.hero-right {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.hero-right img {
+  object-fit: cover;
+  border-radius: 16px;
+  width: 30vw;
+  height: 350px;
+  position: relative;
+  max-height: 17rem;
+  padding-left: 2rem;
+}
+@media screen and (max-width: 768px) {
+  main {
+    grid-column: 1 / 13;
+    padding: 70px 32px 32px 32px;
+  }
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  main {
+    grid-column: 1 / 13;
+    padding: 70px 16px 16px 16px;
+    margin-left: 40px;
+  }
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero_button {
+  font-size: 1.2rem;
+  background-color: #f4ce14;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.2rem;
+  font-family: "Karla";
+  font-size: 2rem;
+  margin-left: 40px;
+}
+.hero_button:hover {
+  background-color: #495e57;
+  color: #eeeeee;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #edefee;
+  transition: 0.2s;
+}
